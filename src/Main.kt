@@ -14,6 +14,12 @@ fun main(args: Array<String>) {
     }
 
     var cadena: String? = null
-    var cantLetras: Int? = cadena?.length ?: 0
+    var cantLetras: Int = cadena?.length ?: 0
     println("La cadena mide $cantLetras de largo")
+
+    var listWithNulls : List<Int?> = listOf<Int?> (8,null,4,2,null)
+    var listWithoutNulls = listWithNulls.filterNotNull()
+    for (n in listWithoutNulls) {
+        println(n)
+    }
 }
