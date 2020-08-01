@@ -12,4 +12,8 @@ fun main(args: Array<String>) {
     } catch (e: NullPointerException) {
         println("Ingresa un valor, no aceptamos valores nulos")
     }
+
+    var cadena: String? = null
+    var cantLetras: Int? = cadena?.length ?: 0
+    println("La cadena mide $cantLetras de largo")
 }
